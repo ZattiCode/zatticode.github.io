@@ -135,3 +135,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Suporte a swipe no carrossel de projetos
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("carrosselProjetos");
+  const slide = container.querySelector(".carrossel-slide");
+
+  let startX = 0;
+  let isSwiping = false;
+
+  container.addEventListener("touchstart", (e) => {
+    isSwiping = true;
+    startX = e.touches[0].clientX;
+  });
+
+  container.addEventListener("touchmove", (e) => {
+    if (!isSwiping) return;
+    const diff = e.touches[0].clientX - startX;
+    slide.style.transition = "none";
+    slide.style.transform = `translateX(calc(${slide.style.transform.replace("translateX(", "").replace("px)", "")}px + ${diff}px))`;
+  });
+
+  container.addEventListener("touchend", (e) => {
+    isSwiping = false;
+    slide.style.transition = ""; // remove estilo para permitir rotação automática continuar
+  });
+});

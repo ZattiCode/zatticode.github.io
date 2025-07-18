@@ -298,6 +298,22 @@ header {
   position: relative;
 }
 
+.svg-texto {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-texto text {
+  font-size: 100px;
+}
+
+@media (max-width: 768px) {
+  .svg-texto text {
+    font-size: 90px;
+    stroke-width: 0.9;
+  }
+}
+
 #depoimentos {
   position: relative;
   background-image: url('src/assets/images/sala1.jpeg'); 
