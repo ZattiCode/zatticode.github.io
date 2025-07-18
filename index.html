@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zatti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <section id="hero" style="
+  background-image: url('src/assets/images/quarto1.JPEG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+    <div class="hero-overlay"></div>
+    <header>
+      <div class="header-container">
+        <span class="logo">ZATTI</span>
+
+        <button class="menu-toggle" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-menu">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero-content">
+      <p class="hero-tagline">Especialistas em móveis planejados</p>
+      <h1 class="hero-title">Você Sonha.<br />A gente realiza.</h1>
+      <p class="hero-subtitle">Projetamos ambientes sob medida que aliam design, funcionalidade e qualidade — tudo para tornar sua casa ou empresa mais bonita, prática e única.</p>
+      <div class="hero-button">
+        <a href="#projetos">Nossos Projetos ↗</a>
+      </div>
+      <div class="hero-rating">
+        <span>★★★★★</span>
+        <div class="divider"></div>
+        <span>90+ Avaliações Positivas</span>
+      </div>
+    </main>
+  </section>
+
+  <section id="sobre">
+    <div class="conteudo-sobre">
+      <div class="texto-sobre">
+        <h1 class="sobre-title">SOBRE NÓS</h1>
+        <p class="sobre-subtitle">
+          A Zatti Ambientes Planejados nasceu do sonho de transformar casas e empresas em espaços que contam histórias. Fundada por profissionais que somam mais de 20 anos de experiência em móveis planejados, nossa empresa surgiu com um propósito simples e poderoso: unir qualidade, design e atendimento próximo em cada projeto.
+        </p>
+        <p class="sobre-subtitle">
+          Mesmo sendo uma marca jovem, carregamos uma bagagem construída ao longo de décadas de trabalho cuidadoso, atenção aos detalhes e respeito por cada cliente. Desde o primeiro dia, acreditamos que planejar um ambiente é muito mais do que fabricar móveis — é criar cenários que facilitam a rotina e traduzem o jeito de viver de cada pessoa.
+        </p>
+        <p class="sobre-subtitle">
+          Foi essa visão que nos fez conquistar rapidamente a confiança de quem nos escolhe. Ao longo dos últimos anos, ampliamos nossa estrutura, investimos em tecnologia de ponta e formamos uma equipe que compartilha o mesmo compromisso: entregar soluções personalizadas que aliam beleza, funcionalidade e qualidade.
+        </p>
+        <p class="sobre-subtitle">
+          Na Zatti, cada projeto é único. Cada detalhe é pensado com carinho. E cada cliente é parte da nossa história.
+        </p>
+        <p class="sobre-subtitle">
+          Você sonha. A gente realiza.
+        </p>
+      </div>
+      <div class="imagem-sobre">
+        <img src="src/assets/images/zatti-logo.png" alt="Zatti Ambientes">
+      </div>
+    </div>
+    <div class="metricas-sobre">
+      <div>
+        <p>20+</p>
+        <p>Anos de experiência</p>
+      </div>
+      <div>
+        <p>1100+</p>
+        <p>Clientes atendidos</p>
+      </div>
+      <div>
+        <p>1600+</p>
+        <p>Projetos entregues</p>
+      </div>
+      <div>
+        <p>100%</p>
+        <p>Satisfação garantida</p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="separador-meio">
+    <svg viewBox="0 0 1500 150" xmlns="http://www.w3.org/2000/svg">
+      <text x="50%" y="134" text-anchor="middle" font-size="60" font-family="Libre Baskerville, serif" fill="none" stroke="white" stroke-opacity="0.4" stroke-width="1">
+        AMBIENTES PLANEJADOS
+      </text>
+    </svg>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1000 100">
+    <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z" fill="#2C2C2C"></path>
+  </svg>
+
+  <!-- Carrossel de Projetos -->
+  <section id="projetos">
+    <h2 class="titulo-projetos">Alguns dos nossos projetos</h2>
+    <div class="carrossel-container" id="carrosselProjetos">
+      <div class="carrossel-slide">
+        <img src="src/assets/images/carrossel/cozinha1.jpeg" alt="Projeto 1">
+        <img src="src/assets/images/carrossel/quarto2.JPEG" alt="Projeto 2">
+        <img src="src/assets/images/carrossel/sala1.jpeg" alt="Projeto 3">
+        <img src="src/assets/images/carrossel/cozinha2.JPEG" alt="Projeto 4">
+        <img src="src/assets/images/carrossel/diversos1.JPEG" alt="Projeto 5">
+        <img src="src/assets/images/carrossel/diversos3.JPEG" alt="Projeto 6">
+        <img src="src/assets/images/carrossel/cozinha3.JPEG" alt="Projeto 7">
+        <img src="src/assets/images/carrossel/quarto3.JPEG" alt="Projeto 8">
+        <img src="src/assets/images/carrossel/diversos2.JPEG" alt="Projeto 9">
+        <img src="src/assets/images/carrossel/cozinha4.JPEG" alt="Projeto 10">
+        <img src="src/assets/images/carrossel/quarto4.JPEG" alt="Projeto 11">
+        <img src="src/assets/images/carrossel/diversos4.JPEG" alt="Projeto 12">
+        <img src="src/assets/images/carrossel/cozinha5.JPEG" alt="Projeto 13">
+        <img src="src/assets/images/carrossel/diversos5.JPEG" alt="Projeto 14">
+        <img src="src/assets/images/carrossel/cozinha6.JPEG" alt="Projeto 15">
+      </div>
+    </div>
+  </section>
+
+  <section id="avaliacoes">
+    <h2>ALGUNS COMENTÁRIOS SOBRE NÓS<br><strong>DEPOIMENTOS</strong></h2>
+    <div class="carrossel">
+      <button class="btn btn-anterior">&#10094;</button>
+      <div class="container-depoimentos">
+        <div class="depoimentos" id="depoimentos">
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/ana-carolina.jpg" alt="Ana Carolina">
+              <div>
+                <div class="nome">Ana Carolina</div>
+                <div class="data">2024-09</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>O atendimento foi ótimo desde o início do projeto até a entrega e a montagem. Cumpriram com o prazo e a qualidade é ótima. Toda a equipe é muito gentil e prestativa. Super recomendo.</p>
+            <button class="ver-mais">Ver mais</button>
+          </div>
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/carol-schmidt.jpg" alt="Carol Schmidt">
+              <div>
+                <div class="nome">Carol Schmidt</div>
+                <div class="data">2025-02</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>Eu não tenho palavras para expressar minha satisfação com a Zatti ambientes.
+              A Patrícia do início ao fim foi super atenciosa dando atenção a cada detalhe.
+              Eu não conseguia fechar minha agenda de segunda a quinta para montagem dos móveis, o montador se dispôs a fazer a montagem no sábado a terça para que eu conseguisse trabalhar na quarta, isso só mostra a importância que a empresa dá a seus clientes.
+              Agora a parte do acabamento dos móveis, superou qualquer expectativa, eu recomendo eles de olhos fechados, atendimento, atenção, qualidade impecável dos móveis</p>
+            <button class="ver-mais">Ver mais</button>
+          </div>
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/Silvia-Di-Buenno.jpg" alt="Silvia Di Buenno">
+              <div>
+                <div class="nome">Silvia Di Buenno</div>
+                <div class="data">2024-09</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>Sonhei muitos anos com a minha casa, minha cozinha, meus móveis, até que comprei meu apartamento, fechei com outra empresa pois ainda não conhecia a Zatti, levei um golpe e fiquei algum tempo sem móveis. Este mês minha cozinha foi montada pela equipe da Patrícia, Lucas, Aline da Zatti e estou me sentindo realizada, cada pedacinho planejado com carinho, montado do jeitinho que eu esperava, com estilo, qualidade e muito carinho. Eu só tenho a agradecer por participarem da realização de um sonho. Deus abençoe sempre. Super recomendo!</p>
+            <button class="ver-mais">Ver mais</button>
+          </div>
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/Vinicius-Silva.jpg" alt="Vinicius Silva">
+              <div>
+                <div class="nome">Vinicius Silva</div>
+                <div class="data">2024-08</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>Melhor empresa de móveis de Curitiba e Santa Catarina! Foram incríveis e me auxiliaram desde o início e ainda com um preço incrível, condição de pagamento excelente. Com certeza farei meus próximos móveis com eles !</p>
+            <button class="ver-mais">Ver mais</button>
+          </div>
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/manoel-oliveira.jpg" alt="Manoel Oliveira">
+              <div>
+                <div class="nome">Manoel Oliveira</div>
+                <div class="data">2024-08</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>Foi perfeita! Já fiz dois negócios com a empresa.
+              Cumpre o prazo de entrega.
+              Os montadores são educados e deixam o ambiente limpo.
+              Super recomendo.
+              Não vão se arrepender.</p>
+            <button class="ver-mais">Ver mais</button>
+          </div>
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/gustavo-duarte.jpg" alt="Gustavo Duarte">
+              <div>
+                <div class="nome">Gustavo Duarte</div>
+                <div class="data">2024-09</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>Fui muito bem atendido pelo Lucas, me entregaram os móveis dentro do prazo e qualidade no geral me agradou muito, desde o atendimento, material e instalação, muito bom mesmo, recomendo.</p>
+            <button class="ver-mais">Ver mais</button>
+          </div>
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/elton-gonçalves.jpg" alt="Elton Gonçalves">
+              <div>
+                <div class="nome">Elton Gonçalves</div>
+                <div class="data">2024-08</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>Serviço de qualidade, ótimo atendimento, custo e benefício sensacional, indico de olho fechado.</p>
+          </div>
+          <div class="depoimento">
+            <div class="perfil">
+              <img class="foto" src="src/assets/images/clientes/leticia-karina.jpg" alt="Leticia Karina">
+              <div>
+                <div class="nome">Leticia Karina</div>
+                <div class="data">2024-05</div>
+              </div>
+            </div>
+            <div class="estrela">★★★★★</div>
+            <p>Atendimento personalizado, profissionais capacitados, comprometimento com cliente, móveis de extrema qualidade,total de 0 defeitos!!
+              Simplesmente os melhores !</p>
+            <button class="ver-mais">Ver mais</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-proximo">&#10095;</button>
+  </section>
+  <div class="floating-orbs">
+    <a href="https://wa.me/5541996452421" class="orb whatsapp" aria-label="WhatsApp">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/zattiambientesplanejados" class="orb instagram" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+    </a>
+  </div>
+
+  <section id="contato">
+    <div class="contato-grid">
+      <!-- Coluna Esquerda: Contatos -->
+      <div class="contato-esquerda">
+        <h2 class="contato-titulo">Fale com a gente</h2>
+
+        <a href="https://wa.me/5541997155253" target="_blank" class="contato-linha whatsapp">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+          <span>(41) 99715-5253</span>
+        </a>
+
+        <a href="https://instagram.com/zattiambientesplanejados" target="_blank" class="contato-linha instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+          <span>@zattiambientesplanejados</span>
+        </a>
+
+        <a href="https://facebook.com/zattiambientesplanejados" target="_blank" class="contato-linha facebook">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+          <span>@zattiambientesplanejados</span>
+        </a>
+      </div>
+
+      <!-- Coluna Central: Mapa -->
+      <div class="contato-mapa">
+        <h2 class="contato-titulo">Localização</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.761710829158!2d-49.350899299999995!3d-25.412785799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce15585aec8fd%3A0x12555fa0b5ae795d!2sZatti%20Ambientes%20Planejados!5e0!3m2!1spt-BR!2sbr!4v1752003972329!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Coluna Direita: Horários -->
+      <div class="contato-direita">
+        <h2 class="contato-titulo">Horários</h2>
+        <table class="horarios-tabela">
+          <tr>
+            <td>Segunda a Sexta</td>
+            <td>09h - 19h</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>09h - 12h</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Fechado</td>
+          </tr>
+        </table>
+        <p class="observacao">Atendimento somente com horário marcado.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-copy">
+      <p>&copy; 2025 Zatti Ambientes Planejados. Todos os direitos reservados.</p>
+    </div>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
