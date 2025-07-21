@@ -272,20 +272,20 @@ extra-texto {
   }
 }
 
-.mySwiper {
+.swiper {
   width: 100%;
   padding: 2rem 0;
-  position: relative;
 }
 
 .swiper-slide {
+  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .swiper-slide img {
-  width: 18rem;
+  width: 100%;
+  max-width: 18rem;
   height: 24rem;
   object-fit: cover;
   border-radius: 0.75rem;
