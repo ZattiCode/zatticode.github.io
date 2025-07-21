@@ -91,32 +91,41 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("carrosselProjetos");
-  const slide = container.querySelector(".carrossel-slide");
-
-  slide.innerHTML += slide.innerHTML;
-
-  let position = 0;
-  let speed = 0.5; 
-  let paused = false;
-
-  function animate() {
-    if (!paused) {
-      position -= speed;
-      if (Math.abs(position) >= slide.scrollWidth / 2) {
-        position = 0; // reinicia
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 10, // 👈 menor espaçamento entre slides
+    slidesPerView: 1, // 👈 no mobile mostra 2 já de início
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 2, // 👈 no celular paisagem
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      1280: {
+        slidesPerView: 5,
       }
-      slide.style.transform = `translateX(${position}px)`;
     }
-    requestAnimationFrame(animate);
-  }
-
-  container.addEventListener("mouseenter", () => paused = true);
-  container.addEventListener("mouseleave", () => paused = false);
-
-  animate();
+  });
 });
+  
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
@@ -136,28 +145,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Suporte a swipe no carrossel de projetos
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("carrosselProjetos");
-  const slide = container.querySelector(".carrossel-slide");
+const botao = document.getElementById('lerMaisBtn');
+  const textoExtra = document.querySelector('.extra-texto');
 
-  let startX = 0;
-  let isSwiping = false;
-
-  container.addEventListener("touchstart", (e) => {
-    isSwiping = true;
-    startX = e.touches[0].clientX;
+  botao.addEventListener('click', () => {
+    textoExtra.classList.toggle('mostrar');
+    botao.innerText = textoExtra.classList.contains('mostrar') ? 'Ler menos' : 'Ler mais';
   });
-
-  container.addEventListener("touchmove", (e) => {
-    if (!isSwiping) return;
-    const diff = e.touches[0].clientX - startX;
-    slide.style.transition = "none";
-    slide.style.transform = `translateX(calc(${slide.style.transform.replace("translateX(", "").replace("px)", "")}px + ${diff}px))`;
-  });
-
-  container.addEventListener("touchend", (e) => {
-    isSwiping = false;
-    slide.style.transition = ""; // remove estilo para permitir rotação automática continuar
-  });
-});

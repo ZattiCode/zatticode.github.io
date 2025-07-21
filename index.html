@@ -62,21 +62,41 @@
     <div class="conteudo-sobre">
       <div class="texto-sobre">
         <h1 class="sobre-title">SOBRE NÓS</h1>
-        <p class="sobre-subtitle">
+        <p class="sobre-subtitle" style="font-family: 'Libre Baskerville', Times, serif;
+  font-size: 1rem;
+  color: #d1d5db;
+  font-weight: 400;
+  text-align: justify;">
           A Zatti Ambientes Planejados nasceu do sonho de transformar casas e empresas em espaços que contam histórias. Fundada por profissionais que somam mais de 20 anos de experiência em móveis planejados, nossa empresa surgiu com um propósito simples e poderoso: unir qualidade, design e atendimento próximo em cada projeto.
         </p>
-        <p class="sobre-subtitle">
-          Mesmo sendo uma marca jovem, carregamos uma bagagem construída ao longo de décadas de trabalho cuidadoso, atenção aos detalhes e respeito por cada cliente. Desde o primeiro dia, acreditamos que planejar um ambiente é muito mais do que fabricar móveis — é criar cenários que facilitam a rotina e traduzem o jeito de viver de cada pessoa.
-        </p>
-        <p class="sobre-subtitle">
-          Foi essa visão que nos fez conquistar rapidamente a confiança de quem nos escolhe. Ao longo dos últimos anos, ampliamos nossa estrutura, investimos em tecnologia de ponta e formamos uma equipe que compartilha o mesmo compromisso: entregar soluções personalizadas que aliam beleza, funcionalidade e qualidade.
-        </p>
-        <p class="sobre-subtitle">
-          Na Zatti, cada projeto é único. Cada detalhe é pensado com carinho. E cada cliente é parte da nossa história.
-        </p>
-        <p class="sobre-subtitle">
-          Você sonha. A gente realiza.
-        </p>
+
+        <!-- TEXTO ESCONDIDO NO MOBILE -->
+        <div class="extra-texto">
+          <p class="sobre-subtitle" style="font-family: 'Libre Baskerville', Times, serif;
+  font-size: 1rem;
+  color: #d1d5db;
+  font-weight: 400;
+  text-align: justify;">
+            Mesmo sendo uma marca jovem, carregamos uma bagagem construída ao longo de décadas de trabalho cuidadoso, atenção aos detalhes e respeito por cada cliente. Desde o primeiro dia, acreditamos que planejar um ambiente é muito mais do que fabricar móveis — é criar cenários que facilitam a rotina e traduzem o jeito de viver de cada pessoa.
+          </p>
+          <p class="sobre-subtitle" style="font-family: 'Libre Baskerville', Times, serif; font-size: 1rem; color: #d1d5db; font-weight: 400; text-align: justify;">
+            Foi essa visão que nos fez conquistar rapidamente a confiança de quem nos escolhe. Ao longo dos últimos anos, ampliamos nossa estrutura, investimos em tecnologia de ponta e formamos uma equipe que compartilha o mesmo compromisso: entregar soluções personalizadas que aliam beleza, funcionalidade e qualidade.
+          </p>
+          <br>
+          <p class="sobre-subtitle" style="font-family: 'Libre Baskerville', Times, serif; font-size: 1rem; color: #d1d5db; font-weight: 400; text-align: justify;">
+            Na Zatti, cada projeto é único. Cada detalhe é pensado com carinho. E cada cliente é parte da nossa história.
+          </p>
+          <br>
+          <p class="sobre-subtitle" style="font-family: 'Libre Baskerville', Times, serif;
+  font-size: 1rem;
+  color: #d1d5db;
+  font-weight: 400;
+  text-align: justify;">
+            Você sonha. A gente realiza.
+          </p>
+        </div>
+
+        <button id="lerMaisBtn">Ler mais</button>
       </div>
       <div class="imagem-sobre">
         <img src="src/assets/images/zatti-logo.png" alt="Zatti Ambientes">
@@ -117,26 +137,29 @@
   <!-- Carrossel de Projetos -->
   <section id="projetos">
     <h2 class="titulo-projetos">Alguns dos nossos projetos</h2>
-    <div class="carrossel-container" id="carrosselProjetos">
-      <div class="carrossel-slide">
-        <img src="src/assets/images/carrossel/cozinha1.jpeg" alt="Projeto 1">
-        <img src="src/assets/images/carrossel/quarto2.JPEG" alt="Projeto 2">
-        <img src="src/assets/images/carrossel/sala1.jpeg" alt="Projeto 3">
-        <img src="src/assets/images/carrossel/cozinha2.JPEG" alt="Projeto 4">
-        <img src="src/assets/images/carrossel/diversos1.JPEG" alt="Projeto 5">
-        <img src="src/assets/images/carrossel/diversos3.JPEG" alt="Projeto 6">
-        <img src="src/assets/images/carrossel/cozinha3.JPEG" alt="Projeto 7">
-        <img src="src/assets/images/carrossel/quarto3.JPEG" alt="Projeto 8">
-        <img src="src/assets/images/carrossel/diversos2.JPEG" alt="Projeto 9">
-        <img src="src/assets/images/carrossel/cozinha4.JPEG" alt="Projeto 10">
-        <img src="src/assets/images/carrossel/quarto4.JPEG" alt="Projeto 11">
-        <img src="src/assets/images/carrossel/diversos4.JPEG" alt="Projeto 12">
-        <img src="src/assets/images/carrossel/cozinha5.JPEG" alt="Projeto 13">
-        <img src="src/assets/images/carrossel/diversos5.JPEG" alt="Projeto 14">
-        <img src="src/assets/images/carrossel/cozinha6.JPEG" alt="Projeto 15">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/cozinha1.jpeg" alt="Projeto 1" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/quarto2.JPEG" alt="Projeto 2" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/sala1.jpeg" alt="Projeto 3" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/cozinha2.JPEG" alt="Projeto 4" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/diversos1.JPEG" alt="Projeto 5" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/diversos3.JPEG" alt="Projeto 6" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/cozinha3.JPEG" alt="Projeto 7" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/quarto3.JPEG" alt="Projeto 8" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/diversos2.JPEG" alt="Projeto 9" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/cozinha4.JPEG" alt="Projeto 10" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/quarto4.JPEG" alt="Projeto 11" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/diversos4.JPEG" alt="Projeto 12" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/cozinha5.JPEG" alt="Projeto 13" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/diversos5.JPEG" alt="Projeto 14" /></div>
+        <div class="swiper-slide"><img src="src/assets/images/carrossel/cozinha6.JPEG" alt="Projeto 15" /></div>
       </div>
+      <!-- Paginação e navegação -->
+      <div class="swiper-pagination"></div>
     </div>
   </section>
+
 
   <section id="avaliacoes">
     <h2>ALGUNS COMENTÁRIOS SOBRE NÓS<br><strong>DEPOIMENTOS</strong></h2>
