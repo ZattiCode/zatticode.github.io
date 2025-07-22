@@ -15,7 +15,8 @@ function getCardsPerView() {
 
 function updateCarousel() {
   const cardsPerView = getCardsPerView();
-  const cardWidth = cards[0].offsetWidth + 20; // + gap
+  const gap = parseInt(getComputedStyle(container).gap) || 20;
+  const cardWidth = cards[0].offsetWidth + gap;
   const totalOffset = currentIndex * cardWidth;
   container.style.transform = `translateX(-${totalOffset}px)`;
 }
@@ -125,7 +126,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-  
+
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".carrossel", {
+      loop: true,
+      grabCursor: true,
+      slidesPerView: "auto",
+      spaceBetween: 15,
+      navigation: {
+        nextEl: ".btn-proximo",
+        prevEl: ".btn-anterior"
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+      }
+    });
+  });
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
